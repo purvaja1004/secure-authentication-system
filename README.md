@@ -37,21 +37,13 @@ A secure user authentication system built with Flask and MySQL. It supports user
 ### API Endpoints
 
 | Method | Endpoint | Description |
-
 |--------|----------|-------------|
-
 | POST | `/register` | Register a new user |
-
 | POST | `/login` | Login and receive a JWT token |
-
 | GET | `/profile` | Get authenticated user profile |
-
 | PUT | `/update-profile` | Update authenticated user profile |
-
 | POST | `/forgot-password` | Send password-reset OTP by email |
-
 | POST | `/verify-otp` | Verify a password-reset OTP |
-
 | POST | `/reset-password` | Reset password using an OTP |
 
 ## Security Notes
