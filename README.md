@@ -1,4 +1,4 @@
-#Secure Authentication System
+# Secure Authentication System
 
 A secure user authentication system built with Flask and MySQL. It supports user registration, login with JWT authentication, profile management, and email-based OTP password reset.
 
