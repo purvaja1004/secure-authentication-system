@@ -4,92 +4,62 @@ A secure user authentication system built with Flask and MySQL. It supports user
 
 ## Features
 
-User registration with bcrypt password hashing
+- User registration with bcrypt password hashing
 
-Secure login with JWT tokens
+- Secure login with JWT tokens
 
-Protected user profile endpoint
+- Protected user profile endpoint
 
-Update user profile details
+- Update user profile details
 
-Forgot-password flow with email OTP
+- Forgot-password flow with email OTP
 
-OTP validation with a 5-minute expiry
+- OTP validation with a 5-minute expiry
 
-Secure password reset
+- Secure password reset
 
-MySQL database integration
+- MySQL database integration
 
 ## Tech Stack
 
-Python
+- Python
 
-Flask
+- Flask
 
-MySQL
+- MySQL
 
-JWT
+- JWT
 
-bcrypt
+- bcrypt
 
-python-dotenv
+- python-dotenv
 
-## API Endpoints
+### API Endpoints
 
-Method
+| Method | Endpoint | Description |
 
-Endpoint
+|--------|----------|-------------|
 
-Description
+| POST | `/register` | Register a new user |
 
-POST
+| POST | `/login` | Login and receive a JWT token |
 
-/register
+| GET | `/profile` | Get authenticated user profile |
 
-Register a new user
+| PUT | `/update-profile` | Update authenticated user profile |
 
-POST
+| POST | `/forgot-password` | Send password-reset OTP by email |
 
-/login
+| POST | `/verify-otp` | Verify a password-reset OTP |
 
-Login and receive a JWT token
-
-GET
-
-/profile
-
-Get authenticated user profile
-
-PUT
-
-/update-profile
-
-Update authenticated user profile
-
-POST
-
-/forgot-password
-
-Send password-reset OTP by email
-
-POST
-
-/verify-otp
-
-Verify a password-reset OTP
-
-POST
-
-/reset-password
-
-Reset password using an OTP
+| POST | `/reset-password` | Reset password using an OTP |
 
 ## Security Notes
 
-Passwords are hashed with bcrypt before storage.
+- Passwords are hashed with bcrypt before storage.
 
-JWT tokens expire after one hour.
+- JWT tokens expire after one hour.
 
-Password-reset OTPs expire after five minutes.
+- Password-reset OTPs expire after five minutes.
 
-Sensitive credentials are stored in .env and excluded from GitHub.
+- Sensitive credentials are stored in .env and excluded from GitHub.
