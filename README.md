@@ -1,8 +1,8 @@
-# Secure Authentication System
+## Secure Authentication System
 
 A secure user authentication system built with Flask and MySQL. It supports user registration, login with JWT authentication, profile management, and email-based OTP password reset.
 
-Features
+# Features
 
 User registration with bcrypt password hashing
 
@@ -20,7 +20,7 @@ Secure password reset
 
 MySQL database integration
 
-Tech Stack
+# Tech Stack
 
 Python
 
@@ -34,7 +34,7 @@ bcrypt
 
 python-dotenv
 
-API Endpoints
+# API Endpoints
 
 Method
 
@@ -84,7 +84,7 @@ POST
 
 Reset password using an OTP
 
-Security Notes
+# Security Notes
 
 Passwords are hashed with bcrypt before storage.
 
